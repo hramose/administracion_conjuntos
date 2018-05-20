@@ -22,6 +22,8 @@
     <div id="wrapper">
       <div>
         <ul>
+          <li>
+          </li>
         </ul>
       </div>
     </div>
