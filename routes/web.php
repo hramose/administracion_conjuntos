@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function () {
+/*Route::get('/', function () {
     return view('welcome');
-});
-Route::get('/holas',function(){
-	return view('holas');
-});
+});*/
+Route::resource('login','LoginController');	
