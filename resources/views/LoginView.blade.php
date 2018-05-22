@@ -9,23 +9,28 @@
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+    <link href="resources/assets/estilos-login.scss" rel="stylesheet">
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 
     <title>Login Adminisrativo</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="css/simple-sidebar.css" rel="stylesheet">
   </head>
   <body>
-    <div id="wrapper">
-      <div>
-        <ul>
-          <li>
-          </li>
-        </ul>
-      </div>
-    </div>
+    <!-- Aquí estoy creando un modal para el ingreso de usuarios -->
+    <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+    	  <div class="modal-dialog">
+				<div class="loginmodal-container">
+					<h1>Login to Your Account</h1><br>
+				  <form>
+					<input type="text" name="usuario" placeholder="Usuario">
+					<input type="password" name="contraseña" placeholder="Contraseña">
+					<input type="submit" name="login" class="login loginmodal-submit" value="Ingresar">
+				  </form>
+
+				  <div class="login-help">
+					<a href="#">Registrar</a> - <a href="#">¿Olvidó su contraseña?</a>
+				  </div>
+				</div>
+			</div>
+		  </div>
   </body>
 </html>
