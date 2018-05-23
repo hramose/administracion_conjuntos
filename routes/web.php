@@ -15,3 +15,6 @@
 //     return view('IndexView');
 // });
 Route::resource('/','LoginController');	
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
