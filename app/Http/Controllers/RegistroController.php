@@ -4,7 +4,7 @@ namespace administracion_conjunto\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class LoginController extends Controller
+class RegistroController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,7 +13,7 @@ class LoginController extends Controller
      */
     public function index()
     {
-        // return view('LoginView');
+        return view('registro/RegistroView');
     }
 
     /**
