@@ -1,6 +1,6 @@
 <?php
 
-namespace administracion_conjunto\Console;
+namespace Administracion_conjunto\Console;
 
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Foundation\Console\Kernel as ConsoleKernel;

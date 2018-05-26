@@ -1,9 +1,9 @@
 <?php
 
-namespace administracion_conjunto\Http\Controllers\Auth;
+namespace Administracion_conjunto\Http\Controllers\Auth;
 
-use administracion_conjunto\User;
-use administracion_conjunto\Http\Controllers\Controller;
+use Administracion_conjunto\User;
+use Administracion_conjunto\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
@@ -59,7 +59,7 @@ class RegisterController extends Controller
      * Create a new user instance after a valid registration.
      *
      * @param  array  $data
-     * @return \administracion_conjunto\User
+     * @return \Administracion_conjunto\User
      */
     protected function create(array $data)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace administracion_conjunto;
+namespace Administracion_conjunto;
 
 use Illuminate\Database\Eloquent\Model;
 

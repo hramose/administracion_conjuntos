@@ -154,11 +154,11 @@ return [
         /*
          * Application Service Providers...
          */
-        administracion_conjunto\Providers\AppServiceProvider::class,
-        administracion_conjunto\Providers\AuthServiceProvider::class,
-        // administracion_conjunto\Providers\BroadcastServiceProvider::class,
-        administracion_conjunto\Providers\EventServiceProvider::class,
-        administracion_conjunto\Providers\RouteServiceProvider::class,
+        Administracion_conjunto\Providers\AppServiceProvider::class,
+        Administracion_conjunto\Providers\AuthServiceProvider::class,
+        // Administracion_conjunto\Providers\BroadcastServiceProvider::class,
+        Administracion_conjunto\Providers\EventServiceProvider::class,
+        Administracion_conjunto\Providers\RouteServiceProvider::class,
 
     ],
 

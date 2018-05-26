@@ -1,6 +1,6 @@
 <?php
 
-namespace administracion_conjunto;
+namespace Administracion_conjunto;
 
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
