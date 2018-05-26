@@ -1,6 +1,6 @@
 <?php
 
-namespace administracion_conjunto\Providers;
+namespace Administracion_conjunto\Providers;
 
 use Illuminate\Support\Facades\Event;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
@@ -13,8 +13,8 @@ class EventServiceProvider extends ServiceProvider
      * @var array
      */
     protected $listen = [
-        'administracion_conjunto\Events\Event' => [
-            'administracion_conjunto\Listeners\EventListener',
+        'Administracion_conjunto\Events\Event' => [
+            'Administracion_conjunto\Listeners\EventListener',
         ],
     ];
 

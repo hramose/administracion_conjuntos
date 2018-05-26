@@ -1,6 +1,6 @@
 <?php
 
-namespace administracion_conjunto\Http\Middleware;
+namespace Administracion_conjunto\Http\Middleware;
 
 use Illuminate\Http\Request;
 use Fideloper\Proxy\TrustProxies as Middleware;

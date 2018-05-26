@@ -23,7 +23,7 @@
             "database/factories"
         ],
         "psr-4": {
-            "administracion_conjunto\\": "app/"
+            "Administracion_conjunto\\": "app/"
         }
     },
     "autoload-dev": {
