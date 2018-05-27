@@ -12,7 +12,7 @@
     <link href="{{asset('css/estilos.css')}}" rel="stylesheet">
     <!-- <link href="{{ asset('css/app.css') }}" rel="stylesheet"> -->
 
-    <title>Administracion Conjunto</title>
+    <title>Administración Conjuntos</title>
 
     <!-- Styles -->
 </head>
@@ -23,7 +23,7 @@
                 <div class="container-fluid">
                     <div class="navbar-header">
                         <a class="navbar-brand" href="{{ url('/') }}">
-                            Administracion Conjunto
+                            Administración Conjuntos
                         </a>
                     </div>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,14 +50,14 @@
                     <ul class="list-unstyled components">
                         <li class="active">
                             <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">
-                                
+
                                  {{ Auth::user()->name }}
                             </a>
                             <ul class="collapse list-unstyled" id="homeSubmenu">
                                 <li>
                                     <a href="{{ url('/home') }}"><i class="fas fa-home"></i> Inicio</a>
                                     <a href="{{ route('logout') }}" onclick="event.preventDefault();document.getElementById('logout-form').submit();">
-                                     <i class="fas fa-walking"></i>    
+                                     <i class="fas fa-walking"></i>
                                     {{ __('Cerrar sesión') }}
                                     </a>
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
@@ -97,6 +97,13 @@
             </main>
         @endguest
     </div>
+<!-- Creando un footer para las paginas-->
+<footer class="py-5 bg-dark">
+  <div class="container">
+    <p class="m-0 text-center text-white">Copyright &copy; Desarrollado con Laravel 5.6. 2018</p>
+  </div>
+</footer>
+
     <script type="text/javascript">
          $(document).ready(function () {
              $('#sidebarCollapse').on('click', function () {
