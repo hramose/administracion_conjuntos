@@ -86,12 +86,16 @@
                         </div>
                     </nav>
                 </div>
+                <main class="py-4">
+                    @yield('content')
+                </main>
             @endauth
+        </div>
+        @guest
             <main class="py-4">
                 @yield('content')
             </main>
-        </div>
-        
+        @endguest
     </div>
     <script type="text/javascript">
          $(document).ready(function () {
