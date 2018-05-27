@@ -1,6 +1,15 @@
 @extends('layouts.app')
 
 @section('content')
+
+<link href="{{asset('css/side.css')}}" rel="stylesheet">
+      <div class="sidenav">
+          <a href="#">Administrador</a>
+          <a href="#">Clientes</a>
+          <a href="#">Estado de cuenta</a>
+          <a href="#">Salir</a>
+        </div>
+
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">

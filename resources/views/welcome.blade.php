@@ -5,13 +5,16 @@
   <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner" role="listbox">
         <div class="carousel-item active">
-          <img src="{{ asset('img/administracion_1.jpg') }}" class="img-carousel img-responsive" alt="admin-5">
+          <img src="{{ asset('img/eje1.jpg') }}" class="img-carousel img-responsive" alt="admin-5">
         </div>
         <div class="carousel-item">
-          <img src="{{ asset('img/administracion_2.jpg') }}" class="img-carousel img-responsive" alt="admin-6">
+          <img src="{{ asset('img/eje2.jpg') }}" class="img-carousel img-responsive" alt="admin-6">
         </div>
         <div class="carousel-item">
-          <img src="{{ asset('img/administracion_3.jpg') }}" class="img-carousel img-responsive" alt="admin-1">
+          <img src="{{ asset('img/eje3.jpg') }}" class="img-carousel img-responsive" alt="admin-1">
+        </div>
+        <div class="carousel-item">
+          <img src="{{ asset('img/eje4.jpg') }}" class="img-carousel img-responsive" alt="admin-3">
         </div>
       </div>
       <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -21,9 +24,9 @@
       <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
-      </a>  
+      </a>
   </div>
 
-  
+
 </article>
 @endsection
