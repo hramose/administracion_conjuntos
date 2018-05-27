@@ -22,7 +22,7 @@
           <div class="card" style="width: 18rem;">
               <img class="card-img-top" src="{{ asset('img/eje2.jpg') }}" alt="Card image cap">
               <div class="card-body">
-                  <h5 class="card-title">Propietario</h5>
+                  <h5 class="card-title">Perfil</h5>
                   <p class="card-text">Aquí podrás entrar en las siguientes caracteristicas que sólo los propietarios podrán ver</p>
                   <a href="#" class="btn btn-primary">Ir a mi propiedad</a>
               </div>
