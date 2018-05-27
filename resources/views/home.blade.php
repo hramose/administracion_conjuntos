@@ -1,31 +1,42 @@
 @extends('layouts.app')
 
 @section('content')
-
-<link href="{{asset('css/side.css')}}" rel="stylesheet">
-      <div class="sidenav">
-          <a href="#">Administrador</a>
-          <a href="#">Clientes</a>
-          <a href="#">Estado de cuenta</a>
-          <a href="#">Salir</a>
-        </div>
-
 <div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">Dashboard</div>
-
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
-                    <h1>Has iniciado sesión correctamente </h1>
-                </div>
+    <div class="row justify-content-right">
+        @if (session('status'))
+            <div class="alert alert-success">
+                {{ session('status') }}
             </div>
+        @endif
+        <div class="col-md-4">
+          <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="{{ asset('img/eje4.jpg') }}" alt="Card image cap">
+              <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="{{ asset('img/eje4.jpg') }}" alt="Card image cap">
+              <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="{{ asset('img/eje4.jpg') }}" alt="Card image cap">
+              <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+          </div>
         </div>
     </div>
 </div>

@@ -4,10 +4,12 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+    <link href="{{asset('css/estilos.css')}}" rel="stylesheet">
     <!-- <link href="{{ asset('css/app.css') }}" rel="stylesheet"> -->
 
     <title>Administracion Conjunto</title>
@@ -16,61 +18,87 @@
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-dark bg-dark">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    @auth
-                        <a class="navbar-brand" href="{{ url('/home') }}">
-                            Inicio
-                        </a>
-                    @else
+        @guest
+            <nav class="navbar navbar-dark bg-dark">
+                <div class="container-fluid">
+                    <div class="navbar-header">
                         <a class="navbar-brand" href="{{ url('/') }}">
                             Administracion Conjunto
                         </a>
-                    @endauth
+                    </div>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav navbar-right">
+                            <!-- Authentication Links -->
+                            <li><a class="nav-link" href="{{ route('login') }}">Iniciar Sesión</a></li>
+                            <li><a class="nav-link" href="{{ route('register') }}">Registro</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <!-- Left Side Of Navbar -->
-                    <ul class="navbar-nav mr-auto">
+            </nav>
+        @endguest
+        <div class="wrapper">
+            @auth
+                <nav id="sidebar">
+                    <div class="sidebar-header">
+                        <h3>Administracion Conjunto</h3>
+                        <strong>AC</strong>
+                    </div>
 
-                    </ul>
-
-                    <!-- Right Side Of Navbar -->
-                    <ul class="nav navbar-nav navbar-right">
-                        <!-- Authentication Links -->
-                        @auth
-                            <li class="nav-item dropdown">
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::user()->name }} <span class="caret"></span>
-                                </a>
-
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="{{ route('logout') }}"
-                                       onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
+                    <ul class="list-unstyled components">
+                        <li class="active">
+                            <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">
+                                
+                                 {{ Auth::user()->name }}
+                            </a>
+                            <ul class="collapse list-unstyled" id="homeSubmenu">
+                                <li>
+                                    <a href="{{ url('/home') }}"><i class="fas fa-home"></i> Inicio</a>
+                                    <a href="{{ route('logout') }}" onclick="event.preventDefault();document.getElementById('logout-form').submit();">
+                                     <i class="fas fa-walking"></i>    
+                                    {{ __('Cerrar sesión') }}
                                     </a>
-
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                         @csrf
                                     </form>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Administración facturas
+                            </a>
+                            <a href="#">
+                                Estado de cuenta
+                            </a>
+                        </li>
+                </nav>
+                <div id="content">
+                    <nav class="navbar navbar-default">
+                        <div class="container-fluid">
+                                <div class="navbar-header">
+                                    <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+                                        <i class="fas fa-align-justify"></i>
+                                    </button>
                                 </div>
-                            </li>
-                        @else
-                            <li><a class="nav-link" href="{{ route('login') }}">Iniciar Sesión</a></li>
-                            <li><a class="nav-link" href="{{ route('register') }}">Registro</a></li>
-                        @endauth
-                    </ul>
+                        </div>
+                    </nav>
                 </div>
-            </div>
-        </nav>
-
-        <main class="py-4">
-            @yield('content')
-        </main>
+            @endauth
+            <main class="py-4">
+                @yield('content')
+            </main>
+        </div>
+        
     </div>
+    <script type="text/javascript">
+         $(document).ready(function () {
+             $('#sidebarCollapse').on('click', function () {
+                 $('#sidebar').toggleClass('active');
+             });
+         });
+    </script>
 </body>
 </html>
