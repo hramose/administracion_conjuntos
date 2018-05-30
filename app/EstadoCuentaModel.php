@@ -14,9 +14,7 @@ class EstadoCuentaModel extends Model
    * @var array
    */
   protected $fillable = [
-      'name','username','perfil_usuario','email', 'password',
+      'name','perfil_usuario',
   ];
-  protected $show = [
-      'perfil_usuario'
-  ];
+
 }
