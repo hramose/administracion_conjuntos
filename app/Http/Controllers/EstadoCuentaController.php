@@ -13,7 +13,11 @@ class EstadoCuentaController extends Controller
      */
     public function index()
     {
-        //
+      return view('cuenta');
+    }
+    public function show($id)
+    {
+        return view('/cuenta');
     }
 
     /**
