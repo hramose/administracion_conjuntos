@@ -96,6 +96,9 @@
     						</thead>
     						<tbody>
     							<!-- foreach ($order->lineItems as $line) or some such thing here -->
+                  <?php foreach ($name as $key => $value): ?>
+
+
     							<tr>
     								<td>2017</td>
     								<td class="text-center">Abril</td>
@@ -129,6 +132,7 @@
     								<td class="no-line text-center"><strong>Total</strong></td>
     								<td class="no-line text-right">$319.490</td>
     							</tr>
+                  <?php endforeach; ?>
     						</tbody>
     					</table>
     				</div>
