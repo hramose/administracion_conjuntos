@@ -17,3 +17,8 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+// Route::get('/'function (){
+//     return view('cuenta');
+// })
+
+Route::get('/cuenta', 'cuentaController@index')->name('cuenta');
