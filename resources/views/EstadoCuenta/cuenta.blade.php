@@ -1,9 +1,13 @@
 @extends('layouts.app')
 
 @section('content')
-<body>
-  <div class="container">
 
+  <div class="container">
+    @if (session('status'))
+        <div class="alert alert-success">
+            {{ session('status') }}
+        </div>
+    @endif
     <h1>Bienvenido al estado de cuenta</h1>
     <p class="lead">Aquí podrás consultar los pagos realizados</p>
 
@@ -37,4 +41,4 @@
     <h3>Recuerda siempre pagar a tiempo.</h3>
 
   </div>
-</body>
+@endsection

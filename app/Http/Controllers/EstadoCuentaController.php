@@ -11,15 +11,14 @@ class EstadoCuentaController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     public function index()
     {
-      return view('cuenta');
+      return view('EstadoCuenta/cuenta');
     }
-    public function show($id)
-    {
-        return view('/cuenta');
-    }
-
     /**
      * Show the form for creating a new resource.
      *

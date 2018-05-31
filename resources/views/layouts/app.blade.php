@@ -98,7 +98,7 @@
         @endguest
     </div>
 <!-- Creando un footer para las paginas-->
-<footer class="py-5 bg-dark">
+<footer class="py-3 bg-dark" style="bottom: 0px;">
   <div class="container">
     <p class="m-0 text-center text-white">Copyright &copy; Desarrollado con Laravel 5.6. 2018</p>
   </div>
