@@ -22,3 +22,4 @@ Route::get('/home', 'HomeController@index')->name('home');
 // })
 
 Route::get('/cuenta', 'EstadoCuentaController@index')->name('cuenta');
+Route::resources('/cuenta','EstadoCuentaController@index');

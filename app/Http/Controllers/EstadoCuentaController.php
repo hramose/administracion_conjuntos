@@ -26,7 +26,7 @@ class EstadoCuentaController extends Controller
      */
     public function create()
     {
-        //
+        return view('cuenta');
     }
 
     /**
