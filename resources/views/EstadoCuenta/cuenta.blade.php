@@ -41,7 +41,7 @@
     <h3>Recuerda siempre pagar a tiempo.</h3>
 
   </div> -->
-
+  <h1>Bienvenido al estado de cuenta</h1>
   <div class="container">
     <div class="row">
         <div class="col-xs-12">
