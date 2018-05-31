@@ -98,7 +98,7 @@
     							<!-- foreach ($order->lineItems as $line) or some such thing here -->
                   <?php foreach ($name as $key => $value): ?>
 
-
+                      
     							<tr>
     								<td>2017</td>
     								<td class="text-center">Abril</td>
