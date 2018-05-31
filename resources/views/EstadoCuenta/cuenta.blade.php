@@ -13,11 +13,22 @@
     <p>Recuerda que aquí podrás ver el estado decuenta de todos tus pagos anteriores que han sido registrados</p>
 
     <div class="row">
-      <div class="col-md-4">Año</div>
-      <div class="col-md-4">Mes</div>
-      <div class="col-md-4">Monto</div>
+      <div class="col-md-4"><strong>Año</strong></div>
+      <div class="col-md-4"><strong>Mes</strong></div>
+      <div class="col-md-4"><strong>Monto</strong></div>
+    </div>
+    <div class="row">
       <div class="col-md-4">2016</div>
       <div class="col-md-4">Enero</div>
+      <div class="col-md-4">$748.500</div>
+      <div class="col-md-4">2016</div>
+      <div class="col-md-4">Febrero</div>
+      <div class="col-md-4">$749.500</div>
+      <div class="col-md-4">2016</div>
+      <div class="col-md-4">Marzo</div>
+      <div class="col-md-4">$750.500</div>
+      <div class="col-md-4">2016</div>
+      <div class="col-md-4">Abril</div>
       <div class="col-md-4">$748.500</div>
     </div>
 
@@ -25,5 +36,5 @@
 
     <h3>Recuerda siempre pagar a tiempo.</h3>
 
-  </div> 
+  </div>
 </body>
