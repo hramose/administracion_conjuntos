@@ -22,7 +22,16 @@ a, a:hover, a:focus {
     text-decoration: none;
     transition: all 0.3s;
 }
-
+.img-carousel{
+    width: 100%;
+    max-height: 550px;
+    display: initial !important;
+}
+.carousel-inner .item
+ {
+    width: 100%;
+    text-align: center;
+ }
 .navbar {
     padding: 15px 10px;
     background: #fff;

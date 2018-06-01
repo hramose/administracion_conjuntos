@@ -25,9 +25,10 @@
         <div class="row">
            <br>
            <div class="col-md-12">
-             <table class="table">
+             <table class="table table-bordered">
                <thead class="thead-dark">
                  <tr>
+                   <th scope="col">Fecha Pago</th>
                    <th scope="col">Numero de recaudo</th>
                    <th scope="col">Numero de vivienda</th>
                    <th scope="col">Forma de pago</th>
@@ -36,10 +37,19 @@
                    <th scope="col">Intereses</th>
                  </tr>
                </thead>
+               @foreach($facturas as $factura)
+                 <tbody id="datos">
+                   <td>{{$factura->fecha_recaudo}}</td>
+                   <td>{{$factura->numero_recaudo}}</td>
+                   <td>{{$factura->id_vivienda}}</td>
+                   <td>{{$factura->f_pago}}</td>
+                   <td>{{$factura->valor_recaudo}}</td>
+                   <td>{{$factura->numero_comprobante}}</td>
+                   <td>{{$factura->intereses}}</td>
+                 </tbody>
+               @endforeach
              </table>
-             <tbody>
-               
-             </tbody>
+             
            </div>
          </div>
       </div>

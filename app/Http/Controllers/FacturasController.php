@@ -17,9 +17,13 @@ class FacturasController extends Controller
     }
     public function index()
     {
-        return view('HistoricoFactura/historico');
+        $facturas = \Administracion_conjunto\FacturasModel::All(); 
+        return view('HistoricoFactura/historico',compact('facturas'));
     }
-
+    public function listing()
+    {
+        
+    }
     /**
      * Show the form for creating a new resource.
      *

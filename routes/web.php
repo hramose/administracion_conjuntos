@@ -23,3 +23,4 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/cuenta', 'EstadoCuentaController@index')->name('cuenta');
 Route::get('/historico', 'FacturasController@index')->name('historico');
+

@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
     <link href="{{asset('css/estilos.css')}}" rel="stylesheet">
+    <script src="{{asset('js/funciones.js')}}"></script>
     <!-- <link href="{{ asset('css/app.css') }}" rel="stylesheet"> -->
 
     <title>Administración Conjuntos</title>
