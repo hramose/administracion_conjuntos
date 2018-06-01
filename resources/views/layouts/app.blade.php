@@ -68,8 +68,8 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="#">
-                                Historio facturas
+                            <a href="{{ route('historico') }}">
+                                Historico facturas
                             </a>
                             <a href="{{ route('cuenta') }}">
                                 Estado de cuenta

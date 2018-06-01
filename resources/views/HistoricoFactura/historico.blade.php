@@ -35,6 +35,7 @@
                    <th scope="col">Valor Pagado</th>
                    <th scope="col">Comprobante de pago</th>
                    <th scope="col">Intereses</th>
+                   <th scope="col">Acción</th>
                  </tr>
                </thead>
                @foreach($facturas as $factura)
@@ -46,6 +47,7 @@
                    <td>{{$factura->valor_recaudo}}</td>
                    <td>{{$factura->numero_comprobante}}</td>
                    <td>{{$factura->intereses}}</td>
+                   <td><a class="btn btn-info" href="{{ route('cuenta') }}"><i class="fas fa-search"></i> Ver</a></td>
                  </tbody>
                @endforeach
              </table>

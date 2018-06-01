@@ -6,15 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class EstadoCuentaModel extends Model
 {
-  use Notifiable;
+ 	protected $table ="v_estado_cuenta";
 
-  /**
-   * The attributes that are mass assignable.
-   *
-   * @var array
-   */
-  protected $fillable = [
-      'name','perfil_usuario',
-  ];
+    
 
 }

@@ -17,7 +17,8 @@ class EstadoCuentaController extends Controller
     }
     public function index()
     {
-      return view('EstadoCuenta/cuenta');
+      $estado = \Administracion_conjunto\EstadoCuentaModel::All(); 
+      return view('EstadoCuenta/cuenta',compact('estado'));
     }
     /**
      * Show the form for creating a new resource.
