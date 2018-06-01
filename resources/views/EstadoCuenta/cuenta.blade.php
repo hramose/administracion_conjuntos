@@ -96,43 +96,40 @@
     						</thead>
     						<tbody>
     							<!-- foreach ($order->lineItems as $line) or some such thing here -->
-                  <?php foreach ($name as $key => $value): ?>
 
-                      
     							<tr>
     								<td>2017</td>
-    								<td class="text-center">Abril</td>
-    								<td class="text-right">$105.990</td>
+    								<td class="text-center"></td>
+    								<td class="text-right"></td>
     							</tr>
                                 <tr>
         							<td>2017</td>
-    								<td class="text-center">Marzo</td>
-    								<td class="text-right">$106.000</td>
+    								<td class="text-center"></td>
+    								<td class="text-right"></td>
     							</tr>
                                 <tr>
             						<td>2017</td>
-    								<td class="text-center">Febrero</td>
-    								<td class="text-right">$105.000</td>
+    								<td class="text-center"></td>
+    								<td class="text-right"></td>
     							</tr>
     							<tr>
     								<td class="thick-line"></td>
     								<td class="thick-line"></td>
     								<td class="thick-line text-center"><strong>Subtotal</strong></td>
-    								<td class="thick-line text-right">$316.990</td>
+    								<td class="thick-line text-right"></td>
     							</tr>
     							<tr>
     								<td class="no-line"></td>
     								<td class="no-line"></td>
     								<td class="no-line text-center"><strong>Intereses</strong></td>
-    								<td class="no-line text-right">$2.500</td>
+    								<td class="no-line text-right"></td>
     							</tr>
     							<tr>
     								<td class="no-line"></td>
     								<td class="no-line"></td>
     								<td class="no-line text-center"><strong>Total</strong></td>
-    								<td class="no-line text-right">$319.490</td>
+    								<td class="no-line text-right"></td>
     							</tr>
-                  <?php endforeach; ?>
     						</tbody>
     					</table>
     				</div>

@@ -37,9 +37,9 @@ class EstadoCuentaController extends Controller
      */
     public function store(Request $request)
     {
-        $db = DataBase::singleton();
-        $respuesta = array();
-        $consulta = $db-executeQue("insert into vivienda (name,perfil_usuario)) values($name)");
+        // $db = DataBase::singleton();
+        // $respuesta = array();
+        // $consulta = $db-executeQue("insert into vivienda (name,perfil_usuario)) values($name)");
 
     }
 
@@ -85,12 +85,12 @@ class EstadoCuentaController extends Controller
      */
     public function destroy($id)
     {
-        $db = Database::singleton();
-        $consulta = $db-executeQue("delete from vivienda where idname =$name");
-        if ($consula) {
-          echo('<div class="alert alert-success" role="alert"><strong>Se ha elimiando el producto</strong></div>');
-        }else {
-          	echo('<div class="alert alert-danger" role="alert"><strong>Hubo un error :(</strong></div>');
-        }
+        // $db = Database::singleton();
+        // $consulta = $db-executeQue("delete from vivienda where idname =$name");
+        // if ($consula) {
+        //   echo('<div class="alert alert-success" role="alert"><strong>Se ha elimiando el producto</strong></div>');
+        // }else {
+        //   	echo('<div class="alert alert-danger" role="alert"><strong>Hubo un error :(</strong></div>');
+        // }
     }
 }
