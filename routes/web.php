@@ -22,6 +22,8 @@ Route::get('/home', 'HomeController@index')->name('home');
 // })
 
 Route::get('/cuenta', 'EstadoCuentaController@index')->name('cuenta');
-
+Route::resource('historicoCuenta','FacturasController');
 Route::get('/historico', 'FacturasController@index')->name('historico');
+Route::get('/historico/create', 'FacturasController@create')->name('crearFactura');
+Route::post('/historico/store', 'FacturasController@store')->name('storeFactura');
 

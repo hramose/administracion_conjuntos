@@ -69,6 +69,7 @@ i, span {
 #sidebar {
     min-width: 250px;
     max-width: 250px;
+    min-height: 100vh;
     background: #495057;
     color: #fff;
     transition: all 0.3s;
@@ -201,10 +202,9 @@ a.article, a.article:hover {
 /* ---------------------------------------------------
     CONTENT STYLE
 ----------------------------------------------------- */
-#content {
-    padding: 20px;
-    min-height: 100vh;
+#content  {
     transition: all 0.3s;
+    max-height: 80px;
 }
 /* ---------------------------------------------------
     MANEJO DE ESTILOS

@@ -8,5 +8,5 @@ class FacturasModel extends Model
 {
     protected $table ="recaudo";
 
-    protected $fillable=["numero_recaudo", "id_vivienda", "f_pago", "valor_recaudo", "numero_comprobante", "intereses"]; 
+    protected $fillable=["numero_recaudo", "id_vivienda", "f_pago", "valor_recaudo", "numero_comprobante", "intereses","fecha_recaudo"]; 
 }

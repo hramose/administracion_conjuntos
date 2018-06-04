@@ -38,9 +38,7 @@ class EstadoCuentaController extends Controller
      */
     public function store(Request $request)
     {
-        // $db = DataBase::singleton();
-        // $respuesta = array();
-        // $consulta = $db-executeQue("insert into vivienda (name,perfil_usuario)) values($name)");
+        
 
     }
 

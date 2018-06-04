@@ -3,6 +3,7 @@
 namespace Administracion_conjunto\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class FacturasController extends Controller
 {
@@ -17,8 +18,9 @@ class FacturasController extends Controller
     }
     public function index()
     {
-        $facturas = \Administracion_conjunto\FacturasModel::All(); 
-        return view('HistoricoFactura/historico',compact('facturas'));
+        $facturas = \Administracion_conjunto\FacturasModel::All();
+        $viviendas = DB::table('vivienda')->get();   
+        return view('HistoricoFactura/historico',compact('facturas'),['viviendas'=>$viviendas]);
     }
     public function listing()
     {
@@ -31,7 +33,7 @@ class FacturasController extends Controller
      */
     public function create()
     {
-        //
+        return view('create_factura');
     }
 
     /**
@@ -42,7 +44,17 @@ class FacturasController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        \Administracion_conjunto\FacturasModel::create([
+            'numero_recaudo'=>$request['txt_numero_recaudo'],
+            'id_vivienda'=>$request['txt_numero_vivienda'],
+            'f_pago'=>$request['txt_f_pago'],
+            'valor_recaudo'=>$request['txt_valor_recaudo'],
+            'numero_comprobante'=>$request['txt_numero_comprobante'],
+            'fecha_recaudo'=>$request['txt_fecha_recaudo'],
+            'intereses'=>$request['txt_interes']
+
+        ]); 
+        return "factura agregada";
     }
 
     /**

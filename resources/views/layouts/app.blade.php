@@ -76,6 +76,9 @@
                             </a>
                         </li>
                 </nav>
+                <main class="py-4">
+                    @yield('content')
+                </main>
                 <div id="content">
                     <nav class="navbar navbar-default">
                         <div class="container-fluid">
@@ -87,9 +90,6 @@
                         </div>
                     </nav>
                 </div>
-                <main class="py-4">
-                    @yield('content')
-                </main>
             @endauth
         </div>
         @guest
